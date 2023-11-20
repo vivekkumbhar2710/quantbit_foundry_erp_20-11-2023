@@ -1,0 +1,101 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "field:company",
+ "creation": "2023-11-01 16:18:54.356791",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "company",
+  "pouring_default_warehouse_tab",
+  "tw_casting",
+  "sw_charge",
+  "sw_core",
+  "casting_treatment__default_warehouse_section",
+  "ct_tw_casting",
+  "ct_sw_raw",
+  "ct_tw_rejected"
+ ],
+ "fields": [
+  {
+   "fieldname": "pouring_default_warehouse_tab",
+   "fieldtype": "Section Break",
+   "label": "Pouring Default Warehouse"
+  },
+  {
+   "fieldname": "company",
+   "fieldtype": "Link",
+   "label": "Company",
+   "options": "Company",
+   "unique": 1
+  },
+  {
+   "fieldname": "tw_casting",
+   "fieldtype": "Link",
+   "label": "Defoult Target Warehouse",
+   "options": "Warehouse"
+  },
+  {
+   "fieldname": "sw_charge",
+   "fieldtype": "Link",
+   "label": "Defoult Source Warehouse For Change Mix",
+   "options": "Warehouse"
+  },
+  {
+   "fieldname": "sw_core",
+   "fieldtype": "Link",
+   "label": "Defoult Source Warehouse For  Core",
+   "options": "Warehouse"
+  },
+  {
+   "fieldname": "casting_treatment__default_warehouse_section",
+   "fieldtype": "Section Break",
+   "label": "Casting Treatment  Default Warehouse"
+  },
+  {
+   "fieldname": "ct_tw_casting",
+   "fieldtype": "Link",
+   "label": "Defoult Target Warehouse for Casting Items",
+   "options": "Warehouse"
+  },
+  {
+   "fieldname": "ct_sw_raw",
+   "fieldtype": "Link",
+   "label": "Default Source Warehouse for Raw Items",
+   "options": "Warehouse"
+  },
+  {
+   "fieldname": "ct_tw_rejected",
+   "fieldtype": "Link",
+   "label": "Defoult Target Warehouse for Rejected Items",
+   "options": "Warehouse"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2023-11-04 13:26:12.791159",
+ "modified_by": "Administrator",
+ "module": "Quantbit Foundry ERP",
+ "name": "Foundry Setting",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
